@@ -1,2 +1,2 @@
-# research-scratch
-Some research work at the University of California, Berkeley.
+# scratch-work
+Some scratch work at the University of California, Berkeley.
