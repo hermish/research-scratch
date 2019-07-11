@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Changer</title>
+	<style type="text/css">
+		.special {
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<div style="text-align: center">
+		<button>Click Me!</button>
+	</div>
+	<script type="text/javascript">
+		var button = document.querySelector("button");
+		button.addEventListener("click", function(){
+			document.body.classList.toggle("special");
+		});
+	</script>
+</body>
+</html>
