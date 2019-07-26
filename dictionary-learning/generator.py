@@ -99,4 +99,3 @@ def get_bernoulli_gaussian(theta, size):
     gaussian = np.random.standard_normal(size)
     result = bernoulli * gaussian
     return result
-

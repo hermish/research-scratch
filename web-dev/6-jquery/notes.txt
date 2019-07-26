@@ -1,0 +1,51 @@
+$(<selector>).<action>()
+
+/* Shortcuts */
+[$("p:first"), $("p:first-of-type")];
+
+/* Examples */
+// Changes all H1 tags
+$("h1").css("color", "blue");
+$("h1").css({
+	color: "blue",
+	padding: "20px"
+});
+
+$("ul").html();
+$("ul").html("<li>New List</li>");
+$("ul").text();
+$("ul").text("New Text");
+
+// Changes all images
+$("img").attr("src"); // getter
+$("img").attr("src", "test.jpg"); // setter
+$("img").attr({
+	src: "test.jpg",
+	alt: "caption"
+});
+$("img").last().attr("src", "new.jpg");
+
+$("input").val();
+$("input").val("Hi!");
+
+$("h1").addClass("correct");
+$("h1").removeClass("correct");
+$("h1").toggleClass("correct");
+
+// Events
+$(".submit").on("click", function(){}); // future elements too
+$(".submit").click(function(){ // current only
+	$(this).css("color", "pink");
+});
+$("#input").keypress(function(event){
+	console.log(event.which);
+});
+
+$("div").fadeOut(1000, function(){ // callback
+	$(this).remove(); // remove from DOM
+});
+$("div").fadeIn();
+$("div").fadeToggle();
+$("div").slideToggle();
+
+
